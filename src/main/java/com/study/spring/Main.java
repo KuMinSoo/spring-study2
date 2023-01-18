@@ -1,6 +1,9 @@
 package com.study.spring;
 
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Main {
 
@@ -33,7 +36,10 @@ public class Main {
 		//클래스 안에 있는 해당 메서드 호출(getDeclaredMethod)
 		//private 메소드 호출 가능하게 함(setAccessible(true))
 		//해당 인스턴스의 메서드 호출(메서드.invoke.인스턴스변수)
+
 		
+		
+
 	}
 
 }

@@ -40,22 +40,25 @@ public class ControllerMethod {
 		return "boardEdit";
 	}
 	
-	//Post형식으로 감.
+	//5. Post형식으로 감.
 	@PostMapping("/edit")
 	public String edit1(){
 		
 		return "boardEdit";
 	}
 	
+	//6. get 방식으로 다중 맵핑 가능함 /edit1,/edit2,/edit3 중 하나를 입력하면 --> boardEdit.jsp 보여줌 
 	@GetMapping(value = {"/edit1","edit2","edit3"})
 	public String test5() {
 		
 		return "boardEdit";
 	}
 	
-	//////////////////
-	
-	@GetMapping
+
+	//++ 
+	//이건 또한 가능함!! return값이 없을경우 --> 해당 경로안에 정확히 boardEdit.jsp파일이 있으면
+	//그 jsp를 열어서 보여줌! 이때 void 매서드 이름 써준다.
+	@GetMapping("/boardEdit")
 	public void test4() {
 		
 	}
